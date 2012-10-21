@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Geographical load balancing</title>
-  </head>
-
-  <body>
-    <a id="forkme_banner" href="https://github.com/geographicalloadbalancing">View on GitHub</a>
-    <div class="shell">
-
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Geographical load balancing</h1>
-            <h2>Sample SVG file</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <p><a href="http://users.cms.caltech.edu/%7Eadamw/publications-1#Sustainable%20IT">Prof. Wierman's page</a></p>
-
-<p><a href="svgmap.xhtml">GLB visualization output (supports seeking)</a>. Note: The slider doesn't work in Firefox as of version 16.0.1. If you save the files locally, then in Chromium, you must <a href="chromium.sh">specify the <code>--allow-file-access-from-files</code> command-line option</a>.</p>
-<p><a href="https://github.com/geographicalloadbalancing/svgmap">Source code.</a> Requires Scala 2.9. Currently only set up to build in IntelliJ IDEA; we intend to write a build script later.</p>
-<p><a href="https://github.com/geographicalloadbalancing/glb_report">Latest draft of the report and presentation.</a> Compile using <code>make pdf</code> or <code>make presentation_pdf</code> (requires <code>pdflatex</code>, <code>bibtex</code>, Inkscape).</p>
-      </section>
-
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/geographicalloadbalancing">geographicalloadbalancing</a> can be found on <a href="https://github.com/geographicalloadbalancing">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
-      </footer>
-
-    </div>
-
-    
-  </body>
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=640" />
+		<link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+		<link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+		<link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+		<script type="text/javascript" src="javascripts/modernizr.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('#main_content').headsmart()
+			})
+		</script>
+		<title>Geographical load balancing</title>
+	</head>
+	
+	<body>
+		<a id="forkme_banner" href="https://github.com/geographicalloadbalancing">View website source on Github</a>
+		<div class="shell">
+			<header>
+				<span class="ribbon-outer">
+					<span class="ribbon-inner">
+						<h1>Cooling-aware geographical load balancing visualized</h1>
+						<h2>Michael Hirshleifer, Yizhen “Eric” Wang; Zhenhua Liu, Adam Wierman</h2>
+					</span>
+					<span class="left-tail"></span>
+					<span class="right-tail"></span>
+				</span>
+			</header>
+			<div id="no-downloads">
+				<span class="inner">
+				</span>
+			</div>
+			<span class="banner-fix"></span>
+			
+			<section id="main_content">
+				<ul>
+					<li><a href="http://users.cms.caltech.edu/%7Eadamw/publications-1#Sustainable%20IT">Prof. Wierman's page</a></li>
+					<li>
+						<strong><a href="svgmap.xhtml">★ Interactive demo: GLB visualization output</a>.</strong>
+						Notes:
+						<ul>
+							<li>Works in Google Chromium.</li>
+							<li>Firefox doesn't support HTML 5 sliders as of version 16.0.1; other features work.</li>
+							<li>If you save the files locally, then in Chromium, you must <a href="chromium.sh">specify the <code>--allow-file-access-from-files</code> command-line option</a>.</li>
+							<li>
+								<strong><a href="https://github.com/geographicalloadbalancing/svgmap">Visualization source code.</a></strong><br />
+								Requires Scala 2.9. Currently only set up to build in IntelliJ IDEA; we intend to write a build script later.
+							</li>
+						</ul>
+					</li>
+					<li>
+						Latest draft of the <strong><a href="surfReport.pdf">report</a></strong> and <strong><a href="presentation.pdf">presentation</a></strong> (revision 59972ec).
+						<ul>
+							<li>
+								<strong><a href="https://github.com/geographicalloadbalancing/glb_report">Source code</a></strong>.
+								Compile using <code>make report</code> or <code>make presentation</code> (requires <code>pdflatex</code>, <code>bibtex</code>, Inkscape).
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			
+			<footer>
+				<span class="ribbon-outer">
+					<span class="ribbon-inner">
+						<p>Projects by <a href="https://github.com/geographicalloadbalancing">geographicalloadbalancing</a> can be found on <a href="https://github.com/geographicalloadbalancing">Hitgub</a></p>
+					</span>
+					<span class="left-tail"></span>
+					<span class="right-tail"></span>
+				</span>
+			</footer>
+		</div>
+	</body>
 </html>
